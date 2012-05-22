@@ -1,0 +1,636 @@
+#**********************************************************************
+#
+#    .ctwmrc
+#
+#**********************************************************************
+# A semi-orderly chaos that uses some icons from SawFish's CoolCleanThin theme
+
+AnimationSpeed	0
+PixmapDirectory		"/usr/local/lib/X11/twm"
+# UnknownIcon		"@linux.xpm"
+UseThreeDMenus
+UseThreeDTitles
+UseThreeDIconManagers
+# UseThreeDBorders
+# NoShowOccupyAll
+AutoOccupy
+
+# XorValue 65535
+
+# NoDefaults
+
+AutoRelativeResize
+
+# nice red: #880010
+# nice darkgreen: #3e4b21
+# nice lighter green: #a09010
+# nice offwhite: #ffffa8
+# rich red: #b3000a
+# seagreenpale: "#c0d098"
+# seagreenpale1: "#bed29b"
+
+# ShowWorkSpaceManager
+# WorkSpaceManagerGeometry 	"150x50+2-2" 2
+WorkSpaces
+{
+#     "Room-1"	{"#619AAE" "white" "DeepSkyBlue3" "white" "xpm:background1.xpm" }
+#     "Room-1"	{"#619AAE" "white" "DeepSkyBlue3" "white" "xpm:mod2_4.xpm" }
+#     "Room-1"	{"#619AAE" "LemonChiffon" "DarkKhaki" "LemonChiffon" }
+    "Room-1"	{"#619AAE" "#ffffa8" "#3e4b21" "#ffffa8" }
+#     "Room-2"	{"#686B9F" "white" "black" "green" }
+}
+
+OccupyAll {
+    "xload"
+    "xconsole"
+    "xbiff"
+    "mailtool"
+    "mixmh"
+    "xfaces"
+    "xkbwatch"
+}
+
+Occupy {
+    "xmailtool"	{"all"}
+    "xrn"	{"all"}
+    "xgopher"   {"all"}
+    "toto"	{"devel" "lecom" "cognac"}
+}
+
+InterpolateMenuColors
+StayUpMenus
+
+Pixmaps {
+#     TitleHighlight "hair"
+    TitleHighlight "xpm:wm_top3.xpm"
+}
+
+RaiseDelay 50
+AutoRaise
+{
+	"TWM Icon Manager"			# AutoRaise the IconManager
+	"ctwm"
+}
+SmartIconify
+
+NoStackMode
+{
+	"Netscape"
+	"soffice"
+}
+
+BorderWidth	1
+#ClientBorderWidth
+
+NoBorder
+{
+	"soffice"
+	"BasiliskII"
+	"xkbwatch"
+	"TWM Icon Manager"
+}
+
+CenterFeedbackWindow
+
+Color
+{
+#     BorderColor "#bed29b"
+#     BorderColor "#9bab7e"
+   BorderColor "#94a378"
+# 	BorderColor "#1f2611"
+	BorderTileBackground "#1f2611"
+# 	BorderTileBackground "#bed29b"
+    IconForeground "sienna"
+    IconBackground "MidnightBlue"
+    IconBorderColor "#404820"
+    MenuForeground "#404820"
+#     MenuBackground "pale goldenrod"
+#     MenuTitleForeground "pale goldenrod"
+#     MenuBackground "#a09010"
+    MenuBackground "#bed29b"
+    MenuTitleForeground "#bed29b"
+    MenuTitleBackground "#404820"
+#     TitleForeground "pale goldenrod"
+#     TitleBackground "IndianRed"
+#     TitleForeground "#ffffa8"
+#     TitleBackground "#880010"
+    TitleForeground "#404820"
+    TitleBackground "#bed29b"
+#     TitleForeground "Black"
+#     TitleBackground "pale goldenrod"
+#     IconManagerBackground "goldenrod"
+#     IconManagerBackground "#a09010"
+    IconManagerBackground "#bed29b"
+}
+
+Monochrome
+{
+    MenuTitleForeground "white"
+    MenuTitleBackground "black"
+}
+
+ForceIcons
+
+# IconDirectory	"~/icons"
+
+# MenuFont	"-*-helvetica-bold-o-normal-*-*-140-*-*-*-*-*-*"
+MenuFont	"-*-lucida-medium-i-*-*-14-140-*-*-*-*-*-*"
+# MenuFont	"-sony-fixed-medium-r-normal--16-150-75-75-c-80-iso8859-1"
+
+IconFont			"-*-helvetica-medium-r-*-*-8-*-*-*-*-*-*-*"
+# IconFont			"-misc-fixed-medium-r-normal--9-*-*-*-*-*-iso8859-1"
+
+NoTitle
+{
+  "xclock"
+  "xload"
+  "xperfmon"
+  "xlogo"
+  "xbiff"
+  "xfaces"
+  "xeyes"
+  "Ico"
+  "TWM Icon Manager"
+  "ToolChest"
+  "kapm"
+  "Basilisk II"
+  "xkbwatch"
+  "rclock"
+}
+
+NoHighlight
+{
+	"xclock"
+	"xload"
+	"xlogo"
+	"TWM Icon Manager"
+	"Xman"
+	"ToolChest"
+	"Basilisk II"
+	"xkbwatch"
+}
+
+
+# NoSaveUnder
+
+# NoTitleFocus
+
+DecorateTransients
+
+#
+# The following stuff is related to the IconManager window.
+#
+IconifyByUnMapping
+
+DontIconifyByUnmapping
+{
+	"TWM"
+	"TWM Icon Manager"
+	"xfaces"
+	"xclock"
+	"Mail & Newsgroups:"
+	"MailThread"
+# 	"Xman"
+# 	"xedit"
+# 	"xarchie"
+# 	"Fig"
+# 	"Ghostscript"
+# 	"vsh"
+# 	"kaleid"
+	"kapm"
+}
+
+ShowIconManager
+# IconManagerGeometry	"=500-0+0"
+# 20100615: rootless mode on Mac OS X (except Apple X11 10.6?); menu bar is 22 pixels high:
+IconManagerGeometry	"=500-0+22"
+# IconManagerGeometry	"=500-0+0"
+# IconManagerFont		"6x10"
+# IconManagerFont		"-schumacher-*-medium-r-normal-*-10-*-*-*-*-60-*-*"
+# IconManagerFont			"-*-helvetica-medium-r-*-*-10-*-*-*-*-*-*-*"
+IconManagerFont			"-b&h-lucida sans-medium-r-normal-*-*-100-*-*-p-*-iso8859-1"
+IconManagerDontShow
+{
+}
+
+# IconManagers
+# {
+# 	"ClassName" ["IconName"] "geometry" "columns"
+# 	"XTerm" "=320-0+0" 2
+# }
+
+IconRegion "50x1024-0-0" South East 50 64
+
+SchrinkIconTitles
+
+RestartPreviousState
+
+StayUpMenus
+
+ResizeFont	"fgi-20"
+#TitleFont	"-*-lucidatypewriter-bold-r-*-*-*-120-*-*-*-*-*-*"
+# # TitleFont	"-*-lucida-bold-i-*-*-12-*-*-*-*-*-*-*"
+# TitleFont	"-*-times-bold-i-*-*-14-*-*-*-*-*-*-*"
+# TitleFont	"-*-palatino-bold-i-*-*-14-*-*-*-*-*-*-*"
+# TitleFont	"-*-zapfchancery-*-i-*-*-17-*-*-*-*-*-*-*"
+# TitleFont		"-b&h-lucida-medium-r-normal-*-*-100-*-*-p-*-iso8859-1"
+TitleFont		"-b&h-lucida sans-medium-r-normal-*-*-100-*-*-p-*-iso8859-1"
+TitleJustification "left"
+
+#WarpCursor
+
+RandomPlacement
+UsePPosition "on"
+Zoom 64
+
+# Activity continues when a menu is down:
+NoGrabServer
+
+# ReverseVideo
+# SqueezeTitle
+OpaqueMove
+OpaqueResize
+OpaqueResizeThreshold 100
+
+NoOpaqueResize
+{
+#	"XGraph"
+}
+
+
+DefaultFunction	f.menu "button1"
+
+
+#Button = KEYS : CONTEXT : FUNCTION
+#----------------------------------
+Button1 =      : root    : f.menu "button1"
+Button1 = s    : root    : f.menu "WindowMenu"
+Button1 = s|m   : title|icon    : f.menu "WindowMenu"
+Button2 =      : root    : f.menu "button2"
+Button3 =      : root    : f.menu "button3"
+Button1 =  m   : icon|title  : f.menu "button1"
+Button2 =  m   : icon|title  : f.menu "button2"
+Button3 =  m   : icon|title  : f.menu "button3"
+Button1 =  s   : title   : f.forcemove
+Button1 =  m 	: title	: f.squeeze
+Button1 =      : title   : f.function "raise-move"
+Button2 =      : title   : f.raiselower
+Button3 =      : title   : f.zoom
+Button1 =      : icon   : f.function "deiconify-raise"
+Button2 =      : icon   : f.move
+Button3 =      : icon   : f.raiselower
+
+"F1" =		: all  : f.raise
+"F1" = m		: all	: f.showiconmgr
+"F1" = s		: root	: f.showworkspacemgr
+"F1" = c		: window|title	: f.vanish
+"F1" = c		: icon	: f.vanish
+"F2" = 		: all  : f.lower
+"F2" = m		: all	: f.hideiconmgr
+"F3" = 		: all	: f.identify
+"F3" = m		: root	: f.move
+"F3" = m		: window|icon|all	: f.forcemove
+"F4" =		: window|title	: f.focus
+"F4" =		: root	: f.unfocus
+"F4" = c		: all	: f.unfocus
+"F4" = m		: window|title	: f.delete
+"F4" = s|m	: window|title	: f.destroy
+"F5" =		: window|title	: f.iconify
+"F5" = m		: window|title|icon	: f.squeeze
+"F5" =		: icon	: f.function "deiconify-raise"
+"F6" =		: window|title|icon  : f.zoom
+"F6" = s		: window|title|icon	: f.htzoom
+"F6" = m		: window|title|icon	: f.hbzoom
+"F7" =		: window|title|icon  : f.fullzoom
+"F7" = s		: window|title|icon  : f.leftzoom
+"F7" = m		: window|title|icon  : f.rightzoom
+"F7" = s|c		: window|title|icon  : f.pack "left"
+"F7" = c		: window|title|icon  : f.pack "right"
+"F8" =		: window|title|icon	: f.winrefresh
+"F8" =		: root	: f.refresh
+"F8" = m		: all	: f.refresh
+"Clear" =		: window|title	: f.winrefresh
+"Clear" =		: root	: f.refresh
+# "F8" = c		: root	: f.lock
+"Menu" =		: all	: f.menu "button1"
+"Tab" = m		: all	: f.menu "TwmWindows"
+
+Function "left-vzoom"
+{
+	f.zoom
+	f.pack "left"
+}
+
+Function "right-vzoom"
+{
+	f.zoom
+	f.pack "right"
+}
+
+Function "raise-move"
+{
+	f.raise
+	f.move
+}
+
+Function "deiconify-raise"
+{
+	f.deiconify
+	f.raise
+}
+
+menu "button1"
+{
+"_|| Windows"	f.title
+"Pin menu"	f.pin
+"Redraw Screen (F8 on root)"		f.refresh
+"Redraw Window (F8)"		f.winrefresh
+"Restart"		f.restart
+"Source .ctwmrc"	f.twmrc
+"--------------------"	f.separator
+"Window Functions"		f.menu "WindowMenu"
+"Window List"			f.menu "TwmWindows"
+"--------------------"	f.separator
+"|_| Commands"	f.menu "button2"
+"||_ Settings"	f.menu "button3"
+}
+
+menu "WindowMenu"
+{
+"shift _|| Window Functions"	f.title
+"Pin menu"	f.pin
+"(De)Iconify (F5)"		f.iconify
+"Squeeze (alt-F5)"		f.squeeze
+"--------------------"	f.separator
+"Move Window (F3)"		f.move
+"Lower Window (F2)"		f.lower
+"Raise Window (F1)"		f.raise
+"toggle AutoRaise Window"	f.autoraise
+"--------------------"	f.separator
+"Save/Restore WM"		f.menu "WMSaveRestore"
+"Resize Window"	f.resize
+"Zoom Window (F6)"		f.zoom
+"horitop zoom (shift-F6)"		f.htzoom
+"horibottom zoom (alt-F6)"	f.hbzoom
+"ZoomFull Window (F7)"	f.fullzoom
+"Zoom-Pack left"			f.function "left-vzoom"
+"Zoom-Pack right"			f.function "right-vzoom"
+"Pack left (control-shift-F7)"		f.pack "left"
+"Pack right (control-F7)"			f.pack "right"
+"--------------------"	f.separator
+"Vanish Window (c-F1)"	f.vanish
+"identify (shift-F3)"		f.identify
+"Workspace Manager"	f.showworkspacemgr
+"Icon Manager"		f.menu "IconMgr"
+"Focussing"		f.menu "Focussing"
+"Lethal Things"	f.menu "destroy"
+"Window List"			f.menu "TwmWindows"
+}
+
+menu "WMSaveRestore"
+{
+	"Save Geometry"		f.savegeometry
+	"Restore Geometry"		f.restoregeometry
+	"Save Stuff"			f.saveyourself
+}
+
+LeftTitleButton "xpm:CCT-menu.xpm" = f.menu "button1"
+# LeftTitleButton "xpm:CCT-menu.xpm" = f.menu "WMSaveRestore"
+LeftTitleButton "xpm:CCT-close_clicked.xpm" = f.identify
+# LeftTitleButton "xpm:background%.xpm" = f.menu "WindowMenu"
+# LeftTitleButton ":xlogo" = f.focus
+
+RightTitleButton "xpm:CCT-close_normal.xpm" {
+	Button1 : f.delete
+	Button3 : f.menu "destroy"
+}
+RightTitleButton "xpm:CCT-minimize_normal.xpm" = f.iconify
+RightTitleButton "xpm:CCT-maximize_normal.xpm" = f.fullzoom
+
+menu "Focussing"
+{
+	"Pin menu"	f.pin
+"Focus on Window (F4 on window)"	f.focus
+"UnFocus (F4 on root)"			f.unfocus
+}
+
+menu "destroy"
+{
+	"Pin menu"	f.pin
+" Delete  (alt-F4)"		f.delete
+" Delete-or-Kill't "		f.deleteordestroy
+" Kill't  (shift-alt-F4)"		f.destroy
+" Logout "		f.menu "logout"
+" Adopt "		f.adoptwindow
+}
+
+menu "logout"
+{
+	"Pin menu"	f.pin
+"Exit TWM"  f.quit
+"LOGOUT"  !"LOGOUT"
+"LOGOUT /usr/bin/x11start 20"  !"tcsh -c \"LOGOUT /usr/bin/x11start 20\" &"
+"LOGOUT /usr/bin/x11start 60"  !"tcsh -c \"LOGOUT /usr/bin/x11start 60\" &"
+}
+
+menu "IconMgr"
+{
+	"Pin menu"	f.pin
+"Show iconmgr (alt-F1)"		f.showiconmgr
+"Hide iconmgr (alt-F2)"		f.hideiconmgr
+"Left iconmgr"		f.lefticonmgr
+"Right iconmgr"	f.righticonmgr
+"down iconmgr"		f.downiconmgr
+"up iconmgr"		f.upiconmgr
+"back iconmgr"		f.backiconmgr
+"forw iconmgr"		f.forwiconmgr
+"prev iconmgr"		f.previconmgr
+"next iconmgr"		f.nexticonmgr
+"sort iconmgr"		f.sorticonmgr
+}
+
+menu "misc-actions"
+{
+"Default Menu"		f.title
+	"Pin menu"	f.pin
+"Redraw Screen"		f.refresh
+"Restart"		f.restart
+"Source .ctwmrc"	f.twmrc
+"twm Version"		f.version
+"(De)Iconify"		f.iconify
+"Move Window"		f.move
+"Resize Window"		f.resize
+"Raise Window"		f.raise
+"Lower Window"		f.lower
+"Destroy Window"	f.destroy
+"Kill twm"		f.quit
+"Mouse Button Help"	f.menu "help"
+}
+
+menu "button2"
+{
+"|_| Commands"	f.title
+	"pIn menu"	f.pin
+"Eject cdrom"	!"exec eject /CDROM &"
+"Cut from file"	f.cutfile
+"pbpaste -> X11 copy"	!"/usr/local/bin/pbxpaste"
+"X11 paste -> pbcopy"	!"/usr/local/bin/pbxcopy"
+"XTerms"	f.menu "XTerms"
+"XLoads"	f.menu "XLoads"
+"Synchro"	f.menu "Synchro"
+# "elm"	!"exec env CSHRC=1 xterm -geometry 100x40 -fn '-*-lucidatypewriter-bold-r-*-*-12-*-*-*-m-*-iso8859-1' -e tcsh -c \"ELM\" &"
+# "eyes"				!"exec 2>&1 > /dev/null -geometry 80x30-200+0 &"
+# "Mozilla"	!"(cd $HOME/News ; pwd ; /bin/nice -5 mozilla > /dev/console 2> /dev/console &)"
+# "Opera"	!"(cd $HOME/News ; pwd ; /bin/nice -5 opera > /dev/console 2> /dev/console &)"
+# "NetScape"	!"(cd $HOME/News ; pwd ; /bin/nice -5 netscape > /dev/console 2> /dev/console &)"
+"sylpheed"	!"nice sylpheed &"
+"NetscapeMail@Moka"	!"ssh -Cf rbertin@moka nice netscape7 --mail &"
+"pine"	!"xterm -g 132x48 -e pine &"
+# "pine free.fr"	!"xterm -g 132x48 -e pine -p $HOME/.pinerc.free &"
+# "pine oreka.com"	!"xterm -g 132x48 -e pine -p $HOME/.pinerc.oreka &"
+# "pine 3.96"	!"xterm -g 132x48 -e pine3.96 -p $HOME/.pinerc.991001 &"
+# "pine@cdf-lppa"	!"rcmd cdf-lppa xterm -g 132x48 -e pine &"
+# "pt"		!"exec pt &"
+# "pt@neuretD"	!"rcmd neuretD pt &"
+# "Xclock"		!"exec xclock -geometry -4-4 -background khaki3 -foreground red -chime -padding 1 &"
+"xcalc"		!"exec xcalc &"
+# "xhpcalc"		!"exec xhpcalc -monochrome &"
+# "xwebster"	!"exec xwebster &"
+"DISPLAY"		!"echo $DISPLAY | sed -e 's/unix/`hostname`/g' | $HOME/script/xconfirm -file - -useslider &"
+"ENV"		!"$SHELL -cf 'set ; printenv ; PS -fl' |  $HOME/script/xconfirm -file - -useslider &"
+"_|| Windows"	f.menu "button1"
+"||_ Settings"	f.menu "button3"
+}
+
+menu "XTerms"
+{
+	"Pin menu"	f.pin
+"xterm@local 132x48"	!"cd ; env CSHRC=1 xterm -geometry 132x48 -ls -tn xterm -e login &"
+"xterm@local 100x30"	!"cd ; env CSHRC=1 xterm -geometry 100x30 -ls -tn xterm -e login &"
+
+"--------------------"	f.separator
+
+"xterm@fysae 132x48"    !"cd ; /usr/bin/X11/xterm -geometry 132x48  -fn VT100medium -e rlogin fysae -l bertin &"
+"xterm@fysae 100x32"    !"cd ; rcmd fysae env CSHRC=1 xterm -geometry 100x32 -fn VT100medium &"
+"xterm@fysaf 132x48"    !"cd ; rcmd fysaf env CSHRC=1 xterm -geometry 132x48 -fn VT100medium &"
+"--------------------"	f.separator
+"xterm@neuretB 132x48"    !"cd ; rcmd neuretB env CSHRC=1 /usr/bin/X11/xterm -l -ls -geometry 132x48 &"
+"--------------------"	f.separator
+"xterm@neuretD 132x48"    !"cd ; rcmd neuretD env CSHRC=1 xterm -C -ls -geometry 132x48 &"
+"xterm@neuretD 100x30"    !"cd ; rcmd neuretD env CSHRC=1 xterm -C -ls -geometry 100x30 &"
+"--------------------"	f.separator
+"xterm 132x48" !"cd ; env CSHRC=1 /usr/bin/X11/xterm -ls -sb -T `hostname` -geometry 132x48 &"
+"xterm 132x24" !"cd ; env CSHRC=1 /usr/bin/X11/xterm -ls -sb -T `hostname` -geometry 132x24 &"
+"xterm 132x12" !"cd ; env CSHRC=1 /usr/bin/X11/xterm -ls -sb -T `hostname` -geometry 132x12 &"
+"xterm 100x30" !"cd ; env CSHRC=1 /usr/bin/X11/xterm -ls -sb -T `hostname` -geometry 100x30 &"
+"xterm 80x24" !"cd ; env CSHRC=1 /usr/bin/X11/xterm -ls -sb -T `hostname` -geometry 80x24 &"
+}
+
+menu "XLoads"
+{
+	"Pin menu"	f.pin
+"xload@fysae"	!"rcmd fysae '/usr/bin/X11/xload -geometry 80x80-90-3' &"
+"xload@fysaf"	!"rcmd fysaf '/usr/bin/X11/xload -geometry 80x80-178-3' &"
+"xload@neuretV"  !"nice xload -geometry 80x80-2-2 &"
+"xload@neuretD"  !"rcmd neuretD exec nice xload -geometry 80x80-2-2 &"
+"xperfmon@neuretV"	!"nice /usr/local/bin/xperfmon -sys -user -free -fn micro -fg black -bg khaki3 -rv -geometry +3-3 &"
+"xcpustate@neuretV"	!"nice /usr/local/X11R5/bin/xcpustate -geometry +3-3 &"
+}
+
+menu "Synchro"
+{
+	"Pin menu"	f.pin
+"unison-gtkui"	!"unison-gtkui &"
+"unison-gtkui@Zygiella"	!"ssh -Cf Zygiella unison-gtkui &"
+"unison-gtkui@portia"	!"ssh -Cf portia unison-gtkui &"
+}
+
+Function "vers"{
+	f.version
+}
+
+menu "button3"
+{
+"||_ Settings"		f.title
+	"Pin menu"	f.pin
+# "Lock"	f.lock
+"Lethal Things"	f.menu "logout"
+"Restart"		f.restart
+"Source .ctwmrc"	f.twmrc
+"Root Window"		f.menu "RootWindows"
+"Autorepeat On"		!"xset r on &"
+"Autorepeat Off"	!"xset r off &"
+"Fast Mouse Tracking"	!"xset m 10 10 &"
+"MousePad Tracking"	!"xset m 4 6 &"
+"Normal Mouse Tracking"	!"xset m default &"
+"Slow Mouse Tracking"	!"xset m &"
+"xmodmap ~/.Xmodmap"	!"xmodmap ${HOME}/.Xmodmap"
+"QuartzWM proxy"	!"nice quartz-wm --only-proxy &"
+"Gamma corrections (XFree86)"	f.menu "xgamma"
+"Screen Saving Parms (xscreensaver)"		f.menu "xs_screensavers"
+"Screen Saving Parms (builtin)"		f.menu "xset_screensavers"
+"Mouse Button Help"	f.menu "help"
+"twm Version"		f.function "vers"
+"_|| Windows"	f.menu "button1"
+"|_| Commands"	f.menu "button2"
+}
+
+menu "RootWindows"
+{
+	"Pin menu"	f.pin
+#"Reset Root"		!"xsetroot -def -mod 2 4 -rv&"
+"Reset Root"		!"xsetroot -def -solid #3e4b21 &"
+"Reset Root, alt"	!"xv -root -quit $HOME/bertin@neuretD/images/marble.jpg &"
+"Reset Root, alt2"	!"xv -root -quit $HOME/bertin@neuretD/cap_mac_files/images/cb.jpg &"
+}
+
+menu "xs_screensavers"
+{
+	"Pin menu"	f.pin
+"Start screensaver"		!"(xscreensaver-command -activate ; xset dpms force off ) &"
+"Lock/Save screen"		!"xscreensaver-command -lock &"
+"Blank screensaver"		!"xscreensaver-command -throttle &"
+"Exit screensaver"		!"xscreensaver-command -exit &"
+"Restart screensaver"		!"xscreensaver-command -exit ; nice xscreensaver > /dev/null 2>&1 &"
+}
+
+menu "xset_screensavers"
+{
+	"Pin menu"	f.pin
+"Start screensaver"		!"xset s activate &"
+"Fast Screen Saver"		!"xset s 50 50 &"
+"Slow Screen Saver"		!"xset s 500 500 &"
+"No Screen Saver"		!"xset s off &"
+"Blank Saver"			!"xset s blank &"
+"Pattern Saver"		!"xset s noblank &"
+}
+
+menu "xgamma"
+{
+	"Pin menu"	f.pin
+"tkgamma tool"	!"tkgamma &"
+"gamma 1"		!"xgamma -gamma 1"
+"---------bola/lcd----------"	f.separator
+"> graphics gamma RGB=1.11,1.097,1.007"	!"xgamma -rgamma 1.11 -ggamma 1.097 -bgamma 1.007"
+"gamma RGB=1.11,1.02,0.97"	!"xgamma -rgamma 1.11 -ggamma 1.02 -bgamma 0.97"
+"gamma RGB=1.017,0.892,0.819"	!"xgamma -rgamma 1.017 -ggamma 0.892 -bgamma 0.819"
+"gamma RGB=1.872,1.672,1.536"	!"xgamma -rgamma 1.872 -ggamma 1.672 -bgamma 1.536"
+"> gamma RGB=1.559,1.387,1.274"	!"xgamma -rgamma 1.559 -ggamma 1.387 -bgamma 1.274"
+">> art.light gamma RGB=1.424,1.262,1.159"	!"xgamma -rgamma 1.424 -ggamma 1.262 -bgamma 1.159"
+">> day light gamma RGB=1.391,1.277,1.142"	!"xgamma -rgamma 1.391 -ggamma 1.277 -bgamma 1.142"
+"gamma RGB=1,0.9,0.8"		!"xgamma -rgamma 1 -ggamma 0.9 -bgamma 0.8"
+"gamma RGB=1,0.9,0.8 * 0.875"	!"xgamma -rgamma 0.875 -ggamma 0.7875 -bgamma 0.7"
+"gamma RGB=1,0.9,0.8 * 0.75"	!"xgamma -rgamma 0.75 -ggamma 0.675 -bgamma 0.6"
+"gamma RGB=1,0.9,0.8 * 0.5"	!"xgamma -rgamma 0.5 -ggamma 0.45 -bgamma 0.4"
+}
+
+menu "help"
+{
+	"Pin menu"	f.pin
+"Mouse Buttons on a Mac A/UX X11 server"		f.title
+"Left Button = Mouse Button" 	f.title
+"Middle Button = OPTION Left Arrow"	f.title
+"Right Button = OPTION Right Arrow"	f.title
+"Meta = Extend char"	f.title
+}
+
