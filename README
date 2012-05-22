@@ -1,12 +1,21 @@
+This is RJVB's evolution of CTWM v3.5, with among others support for multiple
+monitors. I just discovered (in May 2012) that the project has continued to
+evolve in parallel, so I make available the code I've maintained so that any
+bits of interest can be included in the main branch (http://ctwm.free.lp.se/).
+I still use v3.5 on a daily basis, as it's the most transparent WM I know off,
+configurable enough (and not just in the code ^^) and with full control over
+key shortcuts, etc.
+
+The original README follows.
 
                                    CTWM
                                    ----
 
 
-    CTWM is an extension to twm, that support multiple virtual screens,
+    CTWM is an extension to twm, that supports multiple virtual screens,
 and a lot of other goodies.
 
-    You can use and manage up to  32 virtual screens called workspaces.
+    You can use and manage up to 32 virtual screens called workspaces.
 You swap  from one workspace to another by  clicking on a button  in an
 optionnal panel of buttons (the workspace manager) or by invoking a function.
 
