@@ -1,0 +1,328 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DD76FB00486AB0100D96B5E /* CTWM.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6A0FF2C0290799A04C91782 /* CTWM.1 */; };
+		D6AD58CD12630C24006C49C8 /* add_window.c in Sources */ = {isa = PBXBuildFile; fileRef = D6AD58AA12630C24006C49C8 /* add_window.c */; };
+		D6AD58CE12630C24006C49C8 /* ctwm.c in Sources */ = {isa = PBXBuildFile; fileRef = D6AD58AC12630C24006C49C8 /* ctwm.c */; };
+		D6AD58CF12630C24006C49C8 /* cursor.c in Sources */ = {isa = PBXBuildFile; fileRef = D6AD58AE12630C24006C49C8 /* cursor.c */; };
+		D6AD58D012630C24006C49C8 /* deftwmrc.c in Sources */ = {isa = PBXBuildFile; fileRef = D6AD58B012630C24006C49C8 /* deftwmrc.c */; };
+		D6AD58D112630C24006C49C8 /* events.c in Sources */ = {isa = PBXBuildFile; fileRef = D6AD58B112630C24006C49C8 /* events.c */; };
+		D6AD58D212630C24006C49C8 /* gc.c in Sources */ = {isa = PBXBuildFile; fileRef = D6AD58B312630C24006C49C8 /* gc.c */; };
+		D6AD58D312630C24006C49C8 /* gram.c in Sources */ = {isa = PBXBuildFile; fileRef = D6AD58B512630C24006C49C8 /* gram.c */; };
+		D6AD58D412630C24006C49C8 /* gram.y in Sources */ = {isa = PBXBuildFile; fileRef = D6AD58B712630C24006C49C8 /* gram.y */; };
+		D6AD58D512630C24006C49C8 /* iconmgr.c in Sources */ = {isa = PBXBuildFile; fileRef = D6AD58B812630C24006C49C8 /* iconmgr.c */; };
+		D6AD58D612630C24006C49C8 /* icons.c in Sources */ = {isa = PBXBuildFile; fileRef = D6AD58BA12630C24006C49C8 /* icons.c */; };
+		D6AD58D712630C24006C49C8 /* lex.c in Sources */ = {isa = PBXBuildFile; fileRef = D6AD58BC12630C24006C49C8 /* lex.c */; };
+		D6AD58D812630C24006C49C8 /* lex.l in Sources */ = {isa = PBXBuildFile; fileRef = D6AD58BD12630C24006C49C8 /* lex.l */; };
+		D6AD58D912630C24006C49C8 /* list.c in Sources */ = {isa = PBXBuildFile; fileRef = D6AD58BE12630C24006C49C8 /* list.c */; };
+		D6AD58DA12630C24006C49C8 /* menus.c in Sources */ = {isa = PBXBuildFile; fileRef = D6AD58C012630C24006C49C8 /* menus.c */; };
+		D6AD58DB12630C24006C49C8 /* parse.c in Sources */ = {isa = PBXBuildFile; fileRef = D6AD58C212630C24006C49C8 /* parse.c */; };
+		D6AD58DC12630C24006C49C8 /* resize.c in Sources */ = {isa = PBXBuildFile; fileRef = D6AD58C412630C24006C49C8 /* resize.c */; };
+		D6AD58DD12630C24006C49C8 /* session.c in Sources */ = {isa = PBXBuildFile; fileRef = D6AD58C612630C24006C49C8 /* session.c */; };
+		D6AD58DE12630C24006C49C8 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = D6AD58C712630C24006C49C8 /* util.c */; };
+		D6AD58DF12630C24006C49C8 /* version.c in Sources */ = {isa = PBXBuildFile; fileRef = D6AD58C912630C24006C49C8 /* version.c */; };
+		D6AD58E012630C24006C49C8 /* workmgr.c in Sources */ = {isa = PBXBuildFile; fileRef = D6AD58CB12630C24006C49C8 /* workmgr.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76FAF0486AB0100D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				8DD76FB00486AB0100D96B5E /* CTWM.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8DD76FB20486AB0100D96B5E /* CTWM */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CTWM; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6A0FF2C0290799A04C91782 /* CTWM.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CTWM.1; sourceTree = "<group>"; };
+		D6AD58AA12630C24006C49C8 /* add_window.c */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.c; name = add_window.c; path = ../add_window.c; sourceTree = SOURCE_ROOT; };
+		D6AD58AB12630C24006C49C8 /* add_window.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = add_window.h; path = ../add_window.h; sourceTree = SOURCE_ROOT; };
+		D6AD58AC12630C24006C49C8 /* ctwm.c */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.c; name = ctwm.c; path = ../ctwm.c; sourceTree = SOURCE_ROOT; };
+		D6AD58AD12630C24006C49C8 /* ctwm.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = ctwm.h; path = ../ctwm.h; sourceTree = SOURCE_ROOT; };
+		D6AD58AE12630C24006C49C8 /* cursor.c */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.c; name = cursor.c; path = ../cursor.c; sourceTree = SOURCE_ROOT; };
+		D6AD58AF12630C24006C49C8 /* cursor.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = cursor.h; path = ../cursor.h; sourceTree = SOURCE_ROOT; };
+		D6AD58B012630C24006C49C8 /* deftwmrc.c */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.c; name = deftwmrc.c; path = ../deftwmrc.c; sourceTree = SOURCE_ROOT; };
+		D6AD58B112630C24006C49C8 /* events.c */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.c; name = events.c; path = ../events.c; sourceTree = SOURCE_ROOT; };
+		D6AD58B212630C24006C49C8 /* events.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = events.h; path = ../events.h; sourceTree = SOURCE_ROOT; };
+		D6AD58B312630C24006C49C8 /* gc.c */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.c; name = gc.c; path = ../gc.c; sourceTree = SOURCE_ROOT; };
+		D6AD58B412630C24006C49C8 /* gc.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = gc.h; path = ../gc.h; sourceTree = SOURCE_ROOT; };
+		D6AD58B512630C24006C49C8 /* gram.c */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.c; name = gram.c; path = ../gram.c; sourceTree = SOURCE_ROOT; };
+		D6AD58B612630C24006C49C8 /* gram.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = gram.h; path = ../gram.h; sourceTree = SOURCE_ROOT; };
+		D6AD58B712630C24006C49C8 /* gram.y */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.yacc; name = gram.y; path = ../gram.y; sourceTree = SOURCE_ROOT; };
+		D6AD58B812630C24006C49C8 /* iconmgr.c */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.c; name = iconmgr.c; path = ../iconmgr.c; sourceTree = SOURCE_ROOT; };
+		D6AD58B912630C24006C49C8 /* iconmgr.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = iconmgr.h; path = ../iconmgr.h; sourceTree = SOURCE_ROOT; };
+		D6AD58BA12630C24006C49C8 /* icons.c */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.c; name = icons.c; path = ../icons.c; sourceTree = SOURCE_ROOT; };
+		D6AD58BB12630C24006C49C8 /* icons.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = icons.h; path = ../icons.h; sourceTree = SOURCE_ROOT; };
+		D6AD58BC12630C24006C49C8 /* lex.c */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.c; name = lex.c; path = ../lex.c; sourceTree = SOURCE_ROOT; };
+		D6AD58BD12630C24006C49C8 /* lex.l */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.lex; name = lex.l; path = ../lex.l; sourceTree = SOURCE_ROOT; };
+		D6AD58BE12630C24006C49C8 /* list.c */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.c; name = list.c; path = ../list.c; sourceTree = SOURCE_ROOT; };
+		D6AD58BF12630C24006C49C8 /* list.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = list.h; path = ../list.h; sourceTree = SOURCE_ROOT; };
+		D6AD58C012630C24006C49C8 /* menus.c */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.c; name = menus.c; path = ../menus.c; sourceTree = SOURCE_ROOT; };
+		D6AD58C112630C24006C49C8 /* menus.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = menus.h; path = ../menus.h; sourceTree = SOURCE_ROOT; };
+		D6AD58C212630C24006C49C8 /* parse.c */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.c; name = parse.c; path = ../parse.c; sourceTree = SOURCE_ROOT; };
+		D6AD58C312630C24006C49C8 /* parse.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = parse.h; path = ../parse.h; sourceTree = SOURCE_ROOT; };
+		D6AD58C412630C24006C49C8 /* resize.c */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.c; name = resize.c; path = ../resize.c; sourceTree = SOURCE_ROOT; };
+		D6AD58C512630C24006C49C8 /* resize.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = resize.h; path = ../resize.h; sourceTree = SOURCE_ROOT; };
+		D6AD58C612630C24006C49C8 /* session.c */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.c; name = session.c; path = ../session.c; sourceTree = SOURCE_ROOT; };
+		D6AD58C712630C24006C49C8 /* util.c */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.c; name = util.c; path = ../util.c; sourceTree = SOURCE_ROOT; };
+		D6AD58C812630C24006C49C8 /* util.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = util.h; path = ../util.h; sourceTree = SOURCE_ROOT; };
+		D6AD58C912630C24006C49C8 /* version.c */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.c; name = version.c; path = ../version.c; sourceTree = SOURCE_ROOT; };
+		D6AD58CA12630C24006C49C8 /* version.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = version.h; path = ../version.h; sourceTree = SOURCE_ROOT; };
+		D6AD58CB12630C24006C49C8 /* workmgr.c */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.c; name = workmgr.c; path = ../workmgr.c; sourceTree = SOURCE_ROOT; };
+		D6AD58CC12630C24006C49C8 /* workmgr.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = workmgr.h; path = ../workmgr.h; sourceTree = SOURCE_ROOT; };
+		D6AD58E612630CE4006C49C8 /* screen.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = screen.h; path = ../screen.h; sourceTree = SOURCE_ROOT; };
+		D6AD58E712630CE4006C49C8 /* twm.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = twm.h; path = ../twm.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76FAD0486AB0100D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* CTWM */ = {
+			isa = PBXGroup;
+			children = (
+				D6AD58E112630C29006C49C8 /* Headers */,
+				08FB7795FE84155DC02AAC07 /* Source */,
+				C6A0FF2B0290797F04C91782 /* Documentation */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = CTWM;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D6AD58AA12630C24006C49C8 /* add_window.c */,
+				D6AD58AC12630C24006C49C8 /* ctwm.c */,
+				D6AD58AE12630C24006C49C8 /* cursor.c */,
+				D6AD58B012630C24006C49C8 /* deftwmrc.c */,
+				D6AD58B112630C24006C49C8 /* events.c */,
+				D6AD58B312630C24006C49C8 /* gc.c */,
+				D6AD58B512630C24006C49C8 /* gram.c */,
+				D6AD58B712630C24006C49C8 /* gram.y */,
+				D6AD58B812630C24006C49C8 /* iconmgr.c */,
+				D6AD58BA12630C24006C49C8 /* icons.c */,
+				D6AD58BC12630C24006C49C8 /* lex.c */,
+				D6AD58BD12630C24006C49C8 /* lex.l */,
+				D6AD58BE12630C24006C49C8 /* list.c */,
+				D6AD58C012630C24006C49C8 /* menus.c */,
+				D6AD58C212630C24006C49C8 /* parse.c */,
+				D6AD58C412630C24006C49C8 /* resize.c */,
+				D6AD58C612630C24006C49C8 /* session.c */,
+				D6AD58C712630C24006C49C8 /* util.c */,
+				D6AD58C912630C24006C49C8 /* version.c */,
+				D6AD58CB12630C24006C49C8 /* workmgr.c */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76FB20486AB0100D96B5E /* CTWM */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6A0FF2B0290797F04C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				C6A0FF2C0290799A04C91782 /* CTWM.1 */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+		D6AD58E112630C29006C49C8 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				D6AD58AB12630C24006C49C8 /* add_window.h */,
+				D6AD58AD12630C24006C49C8 /* ctwm.h */,
+				D6AD58AF12630C24006C49C8 /* cursor.h */,
+				D6AD58B212630C24006C49C8 /* events.h */,
+				D6AD58B412630C24006C49C8 /* gc.h */,
+				D6AD58B612630C24006C49C8 /* gram.h */,
+				D6AD58B912630C24006C49C8 /* iconmgr.h */,
+				D6AD58BB12630C24006C49C8 /* icons.h */,
+				D6AD58BF12630C24006C49C8 /* list.h */,
+				D6AD58C112630C24006C49C8 /* menus.h */,
+				D6AD58C312630C24006C49C8 /* parse.h */,
+				D6AD58C512630C24006C49C8 /* resize.h */,
+				D6AD58E612630CE4006C49C8 /* screen.h */,
+				D6AD58E712630CE4006C49C8 /* twm.h */,
+				D6AD58C812630C24006C49C8 /* util.h */,
+				D6AD58CA12630C24006C49C8 /* version.h */,
+				D6AD58CC12630C24006C49C8 /* workmgr.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76FA90486AB0100D96B5E /* CTWM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB928508733DD80010E9CD /* Build configuration list for PBXNativeTarget "CTWM" */;
+			buildPhases = (
+				8DD76FAB0486AB0100D96B5E /* Sources */,
+				8DD76FAD0486AB0100D96B5E /* Frameworks */,
+				8DD76FAF0486AB0100D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CTWM;
+			productInstallPath = "$(HOME)/bin";
+			productName = CTWM;
+			productReference = 8DD76FB20486AB0100D96B5E /* CTWM */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "CTWM" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* CTWM */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DD76FA90486AB0100D96B5E /* CTWM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76FAB0486AB0100D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6AD58CD12630C24006C49C8 /* add_window.c in Sources */,
+				D6AD58CE12630C24006C49C8 /* ctwm.c in Sources */,
+				D6AD58CF12630C24006C49C8 /* cursor.c in Sources */,
+				D6AD58D012630C24006C49C8 /* deftwmrc.c in Sources */,
+				D6AD58D112630C24006C49C8 /* events.c in Sources */,
+				D6AD58D212630C24006C49C8 /* gc.c in Sources */,
+				D6AD58D312630C24006C49C8 /* gram.c in Sources */,
+				D6AD58D412630C24006C49C8 /* gram.y in Sources */,
+				D6AD58D512630C24006C49C8 /* iconmgr.c in Sources */,
+				D6AD58D612630C24006C49C8 /* icons.c in Sources */,
+				D6AD58D712630C24006C49C8 /* lex.c in Sources */,
+				D6AD58D812630C24006C49C8 /* lex.l in Sources */,
+				D6AD58D912630C24006C49C8 /* list.c in Sources */,
+				D6AD58DA12630C24006C49C8 /* menus.c in Sources */,
+				D6AD58DB12630C24006C49C8 /* parse.c in Sources */,
+				D6AD58DC12630C24006C49C8 /* resize.c in Sources */,
+				D6AD58DD12630C24006C49C8 /* session.c in Sources */,
+				D6AD58DE12630C24006C49C8 /* util.c in Sources */,
+				D6AD58DF12630C24006C49C8 /* version.c in Sources */,
+				D6AD58E012630C24006C49C8 /* workmgr.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB928608733DD80010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = CTWM;
+			};
+			name = Debug;
+		};
+		1DEB928708733DD80010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = CTWM;
+			};
+			name = Release;
+		};
+		1DEB928A08733DD80010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		1DEB928B08733DD80010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB928508733DD80010E9CD /* Build configuration list for PBXNativeTarget "CTWM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB928608733DD80010E9CD /* Debug */,
+				1DEB928708733DD80010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "CTWM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB928A08733DD80010E9CD /* Debug */,
+				1DEB928B08733DD80010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

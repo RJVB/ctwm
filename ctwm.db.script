@@ -1,0 +1,25 @@
+#!/bin/sh
+
+# if [ "`pwd`" != "$HOME" ] ;then
+# 	cp $HOME/.gdbinit .gdbinit
+# 	echo "set arg $*" >> .gdbinit
+# fi
+
+PWD="`pwd`"
+EXEDIR="`dirname $0`"
+# cd $EXEDIR
+
+ARGS=""
+XGARG=""
+while [ $# != 0 ] ;do
+	case $1 in
+		*)
+			ARGS="$ARGS $1"
+			;;
+	esac
+	shift
+done
+
+echo "set arg $XGARG $ARGS" > .gdb_args
+echo "show arg" >> .gdb_args
+exec gdb -command=.gdb_args $0.bin

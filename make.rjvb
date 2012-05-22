@@ -1,0 +1,270 @@
+
+# /Users/bertin/script/wmake -wk
+# Mon Oct 11 11:05:05 CEST 2010
+make: Entering directory `/Volumes/Debian/Users/bertin/work/src/ctwm-3.5'
+yacc -d gram.y
+conflicts: 8 shift/reduce
+mv -f y.tab.c gram.c
+mv -f y.tab.h gram.h
+gccopt -unibin64  -gsimOpt        -I/usr/X11R6/include    -D__powerpc__ -D__DARWIN__                                 -DNO_ALLOCA -DX_LOCALE -DCSRG_BASED      -DUSEM4  -DXPM -DX11R6 -D_HAVE_XINERAMA_   -DI18N  -o gram.o -c gram.c
+# Enabling auto vectorisation
+lex  -t lex.l > lex.c
+gccopt -unibin64  -gsimOpt        -I/usr/X11R6/include    -D__powerpc__ -D__DARWIN__                                 -DNO_ALLOCA -DX_LOCALE -DCSRG_BASED      -DUSEM4  -DXPM -DX11R6 -D_HAVE_XINERAMA_   -DI18N  -o lex.o -c lex.c
+# Enabling auto vectorisation
+<stdout>:1268: warning: 'yyunput' defined but not used
+<stdout>:1268: warning: 'yyunput' defined but not used
+rm -f deftwmrc.c
+echo '/* ' >>deftwmrc.c
+echo ' * This file is generated automatically from the default' >>deftwmrc.c
+echo ' * twm bindings file system.ctwmrc by the twm Imakefile.' >>deftwmrc.c
+echo ' */' >>deftwmrc.c
+echo '' >>deftwmrc.c
+echo 'char *defTwmrc[] = {' >>deftwmrc.c
+sed -e '/^#/d' -e 's/"/\\"/g' -e 's/^/    "/' -e 's/$/",/' 		system.ctwmrc >>deftwmrc.c
+echo '    (char *) 0 };' >>deftwmrc.c
+gccopt -unibin64  -gsimOpt        -I/usr/X11R6/include    -D__powerpc__ -D__DARWIN__                                 -DNO_ALLOCA -DX_LOCALE -DCSRG_BASED      -DUSEM4  -DXPM -DX11R6 -D_HAVE_XINERAMA_   -DI18N  -o deftwmrc.o -c deftwmrc.c
+# Enabling auto vectorisation
+gccopt -unibin64  -gsimOpt        -I/usr/X11R6/include    -D__powerpc__ -D__DARWIN__                                 -DNO_ALLOCA -DX_LOCALE -DCSRG_BASED      -DUSEM4  -DXPM -DX11R6 -D_HAVE_XINERAMA_   -DI18N  -o add_window.o -c add_window.c
+# Enabling auto vectorisation
+add_window.c: In function 'FetchWmColormapWindows':
+add_window.c:1960: warning: suggest parentheses around assignment used as truth value
+add_window.c: In function 'AddWindow':
+add_window.c:367: warning: cast from pointer to integer of different size
+add_window.c:378: warning: cast from pointer to integer of different size
+add_window.c:382: warning: cast from pointer to integer of different size
+add_window.c: In function 'FetchWmColormapWindows':
+add_window.c:1960: warning: suggest parentheses around assignment used as truth value
+gccopt -unibin64  -gsimOpt        -I/usr/X11R6/include    -D__powerpc__ -D__DARWIN__                                 -DNO_ALLOCA -DX_LOCALE -DCSRG_BASED      -DUSEM4  -DXPM -DX11R6 -D_HAVE_XINERAMA_   -DI18N  -o gc.o -c gc.c
+# Enabling auto vectorisation
+gccopt -unibin64  -gsimOpt        -I/usr/X11R6/include    -D__powerpc__ -D__DARWIN__                                 -DNO_ALLOCA -DX_LOCALE -DCSRG_BASED      -DUSEM4  -DXPM -DX11R6 -D_HAVE_XINERAMA_   -DI18N  -o list.o -c list.c
+# Enabling auto vectorisation
+rm -f ctwm.o
+gccopt -unibin64  -gsimOpt        -I/usr/X11R6/include    -D__powerpc__ -D__DARWIN__                                 -DNO_ALLOCA -DX_LOCALE -DCSRG_BASED      -DUSEM4  -DXPM -DX11R6 -D_HAVE_XINERAMA_   -DI18N  '-DPIXMAP_DIRECTORY="'/usr/X11R6/lib/X11/twm'/images"' -c ctwm.c
+# Enabling auto vectorisation
+rm -f parse.o
+gccopt -unibin64  -gsimOpt        -I/usr/X11R6/include    -D__powerpc__ -D__DARWIN__                                 -DNO_ALLOCA -DX_LOCALE -DCSRG_BASED      -DUSEM4  -DXPM -DX11R6 -D_HAVE_XINERAMA_   -DI18N  '-DSYSTEM_INIT_FILE="'/usr/X11R6/lib/X11/twm'/system.ctwmrc"' -c parse.c
+# Enabling auto vectorisation
+parse.c: In function 'm4twmFileInput':
+parse.c:463: warning: unused variable 'pppp'
+parse.c: At top level:
+parse.c:140: warning: 'twmFileInput' declared 'static' but never defined
+parse.c: In function 'm4twmFileInput':
+parse.c:463: warning: unused variable 'pppp'
+parse.c: At top level:
+parse.c:140: warning: 'twmFileInput' declared 'static' but never defined
+gccopt -unibin64  -gsimOpt        -I/usr/X11R6/include    -D__powerpc__ -D__DARWIN__                                 -DNO_ALLOCA -DX_LOCALE -DCSRG_BASED      -DUSEM4  -DXPM -DX11R6 -D_HAVE_XINERAMA_   -DI18N  -o menus.o -c menus.c
+# Enabling auto vectorisation
+menus.c: In function 'ExecuteFunction':
+menus.c:2291: warning: unused variable 'child'
+menus.c:2278: warning: unused variable 'croot'
+menus.c: In function 'LockScreen':
+menus.c:4859: warning: unused variable 'uid'
+menus.c: In function 'BumpWindowColormap':
+menus.c:5370: warning: suggest parentheses around assignment used as truth value
+menus.c: In function 'packwindow':
+menus.c:5802: warning: unused variable 'junkD'
+menus.c:5802: warning: unused variable 'junkB'
+menus.c: In function 'fillwindow':
+menus.c:5846: warning: unused variable 'y'
+menus.c:5846: warning: unused variable 'x'
+menus.c: In function 'ExecuteFunction':
+menus.c:2291: warning: unused variable 'child'
+menus.c:2278: warning: unused variable 'croot'
+menus.c: In function 'LockScreen':
+menus.c:4859: warning: unused variable 'uid'
+menus.c: In function 'BumpWindowColormap':
+menus.c:5370: warning: suggest parentheses around assignment used as truth value
+menus.c: In function 'packwindow':
+menus.c:5802: warning: unused variable 'junkD'
+menus.c:5802: warning: unused variable 'junkB'
+menus.c: In function 'fillwindow':
+menus.c:5846: warning: unused variable 'y'
+menus.c:5846: warning: unused variable 'x'
+gccopt -unibin64  -gsimOpt        -I/usr/X11R6/include    -D__powerpc__ -D__DARWIN__                                 -DNO_ALLOCA -DX_LOCALE -DCSRG_BASED      -DUSEM4  -DXPM -DX11R6 -D_HAVE_XINERAMA_   -DI18N  -o events.o -c events.c
+# Enabling auto vectorisation
+events.c: In function 'RedoIcon':
+events.c:1690: warning: suggest parentheses around assignment used as truth value
+events.c:1694: warning: suggest parentheses around assignment used as truth value
+events.c:1698: warning: suggest parentheses around assignment used as truth value
+events.c: In function 'HandleButtonRelease':
+events.c:2554: warning: suggest parentheses around && within ||
+events.c: In function 'HandleButtonPress':
+events.c:2803: warning: suggest explicit braces to avoid ambiguous 'else'
+events.c: In function 'UninstallRootColormapQScanner':
+events.c:4036: warning: suggest explicit braces to avoid ambiguous 'else'
+events.c: In function 'RedoIcon':
+events.c:1690: warning: suggest parentheses around assignment used as truth value
+events.c:1694: warning: suggest parentheses around assignment used as truth value
+events.c:1698: warning: suggest parentheses around assignment used as truth value
+events.c: In function 'HandleButtonRelease':
+events.c:2554: warning: suggest parentheses around && within ||
+events.c: In function 'HandleButtonPress':
+events.c:2803: warning: suggest explicit braces to avoid ambiguous 'else'
+events.c: In function 'UninstallRootColormapQScanner':
+events.c:4036: warning: suggest explicit braces to avoid ambiguous 'else'
+gccopt -unibin64  -gsimOpt        -I/usr/X11R6/include    -D__powerpc__ -D__DARWIN__                                 -DNO_ALLOCA -DX_LOCALE -DCSRG_BASED      -DUSEM4  -DXPM -DX11R6 -D_HAVE_XINERAMA_   -DI18N  -o resize.o -c resize.c
+# Enabling auto vectorisation
+gccopt -unibin64  -gsimOpt        -I/usr/X11R6/include    -D__powerpc__ -D__DARWIN__                                 -DNO_ALLOCA -DX_LOCALE -DCSRG_BASED      -DUSEM4  -DXPM -DX11R6 -D_HAVE_XINERAMA_   -DI18N  -o util.o -c util.c
+# Enabling auto vectorisation
+util.c: In function 'ExpandFilePath':
+util.c:392: warning: suggest parentheses around assignment used as truth value
+util.c:403: warning: suggest parentheses around assignment used as truth value
+util.c: In function 'ExpandPixmapPath':
+util.c:512: warning: suggest parentheses around assignment used as truth value
+util.c: In function 'GetFont':
+util.c:1543: warning: unused variable 'xf'
+util.c: In function 'PaintAllDecoration':
+util.c:2655: warning: suggest explicit braces to avoid ambiguous 'else'
+util.c: At top level:
+siconify.bm:3: warning: 'siconify_bits' defined but not used
+util.c: In function 'ExpandFilePath':
+util.c:392: warning: suggest parentheses around assignment used as truth value
+util.c:403: warning: suggest parentheses around assignment used as truth value
+util.c: In function 'ExpandPixmapPath':
+util.c:512: warning: suggest parentheses around assignment used as truth value
+util.c: In function 'GetFont':
+util.c:1543: warning: unused variable 'xf'
+util.c: In function 'PaintAllDecoration':
+util.c:2655: warning: suggest explicit braces to avoid ambiguous 'else'
+util.c: At top level:
+siconify.bm:3: warning: 'siconify_bits' defined but not used
+gccopt -unibin64  -gsimOpt        -I/usr/X11R6/include    -D__powerpc__ -D__DARWIN__                                 -DNO_ALLOCA -DX_LOCALE -DCSRG_BASED      -DUSEM4  -DXPM -DX11R6 -D_HAVE_XINERAMA_   -DI18N  -o version.o -c version.c
+# Enabling auto vectorisation
+gccopt -unibin64  -gsimOpt        -I/usr/X11R6/include    -D__powerpc__ -D__DARWIN__                                 -DNO_ALLOCA -DX_LOCALE -DCSRG_BASED      -DUSEM4  -DXPM -DX11R6 -D_HAVE_XINERAMA_   -DI18N  -o iconmgr.o -c iconmgr.c
+# Enabling auto vectorisation
+iconmgr.c: In function 'AddIconManager':
+iconmgr.c:587: warning: suggest explicit braces to avoid ambiguous 'else'
+iconmgr.c: In function 'AddIconManager':
+iconmgr.c:587: warning: suggest explicit braces to avoid ambiguous 'else'
+gccopt -unibin64  -gsimOpt        -I/usr/X11R6/include    -D__powerpc__ -D__DARWIN__                                 -DNO_ALLOCA -DX_LOCALE -DCSRG_BASED      -DUSEM4  -DXPM -DX11R6 -D_HAVE_XINERAMA_   -DI18N  -o cursor.o -c cursor.c
+# Enabling auto vectorisation
+cursor.c: In function 'MakeStringCursor':
+cursor.c:221: warning: unused variable 'rheight'
+cursor.c:221: warning: unused variable 'rwidth'
+cursor.c: In function 'MakeStringCursor':
+cursor.c:221: warning: unused variable 'rheight'
+cursor.c:221: warning: unused variable 'rwidth'
+gccopt -unibin64  -gsimOpt        -I/usr/X11R6/include    -D__powerpc__ -D__DARWIN__                                 -DNO_ALLOCA -DX_LOCALE -DCSRG_BASED      -DUSEM4  -DXPM -DX11R6 -D_HAVE_XINERAMA_   -DI18N  -o icons.o -c icons.c
+# Enabling auto vectorisation
+gccopt -unibin64  -gsimOpt        -I/usr/X11R6/include    -D__powerpc__ -D__DARWIN__                                 -DNO_ALLOCA -DX_LOCALE -DCSRG_BASED      -DUSEM4  -DXPM -DX11R6 -D_HAVE_XINERAMA_   -DI18N  -o workmgr.o -c workmgr.c
+# Enabling auto vectorisation
+workmgr.c: In function 'RedirectToCaptive':
+workmgr.c:730: warning: unused variable '_XA_WM_CTWMSLIST'
+workmgr.c:728: warning: unused variable 'len'
+workmgr.c:722: warning: unused variable 'state'
+workmgr.c: In function 'Vanish':
+workmgr.c:1017: warning: unused variable 't'
+workmgr.c: In function 'PaintButton':
+workmgr.c:1728: warning: unused variable 'fnum'
+workmgr.c:1725: warning: unused variable 'descent'
+workmgr.c:1724: warning: unused variable 'i'
+workmgr.c:1723: warning: unused variable 'font_names'
+workmgr.c:1722: warning: unused variable 'xfonts'
+workmgr.c: In function 'WMgrHandleButtonEvent':
+workmgr.c:2315: warning: unused variable 'eventMask'
+workmgr.c: In function 'SetCaptivesList':
+workmgr.c:3079: warning: unused variable 'i'
+workmgr.c:3076: warning: unused variable 'actual_format'
+workmgr.c:3075: warning: unused variable 'actual_type'
+workmgr.c:3073: warning: unused variable 'bytesafter'
+workmgr.c:3072: warning: unused variable 'p'
+workmgr.c:3072: warning: unused variable 'prop'
+workmgr.c: In function 'RemoveFromCaptiveList':
+workmgr.c:3172: warning: unused variable 'i'
+workmgr.c: In function 'CaptiveCtwmRootWindow':
+workmgr.c:3226: warning: unused variable 'root'
+workmgr.c: In function 'DontRedirect':
+workmgr.c:3283: warning: unused variable 'root'
+workmgr.c: In function 'RedirectToCaptive':
+workmgr.c:730: warning: unused variable '_XA_WM_CTWMSLIST'
+workmgr.c:728: warning: unused variable 'len'
+workmgr.c:722: warning: unused variable 'state'
+workmgr.c: In function 'Vanish':
+workmgr.c:1017: warning: unused variable 't'
+workmgr.c: In function 'PaintButton':
+workmgr.c:1728: warning: unused variable 'fnum'
+workmgr.c:1725: warning: unused variable 'descent'
+workmgr.c:1724: warning: unused variable 'i'
+workmgr.c:1723: warning: unused variable 'font_names'
+workmgr.c:1722: warning: unused variable 'xfonts'
+workmgr.c: In function 'WMgrHandleButtonEvent':
+workmgr.c:2315: warning: unused variable 'eventMask'
+workmgr.c: In function 'SetCaptivesList':
+workmgr.c:3079: warning: unused variable 'i'
+workmgr.c:3076: warning: unused variable 'actual_format'
+workmgr.c:3075: warning: unused variable 'actual_type'
+workmgr.c:3073: warning: unused variable 'bytesafter'
+workmgr.c:3072: warning: unused variable 'p'
+workmgr.c:3072: warning: unused variable 'prop'
+workmgr.c: In function 'RemoveFromCaptiveList':
+workmgr.c:3172: warning: unused variable 'i'
+workmgr.c: In function 'CaptiveCtwmRootWindow':
+workmgr.c:3226: warning: unused variable 'root'
+workmgr.c: In function 'DontRedirect':
+workmgr.c:3283: warning: unused variable 'root'
+gccopt -unibin64  -gsimOpt        -I/usr/X11R6/include    -D__powerpc__ -D__DARWIN__                                 -DNO_ALLOCA -DX_LOCALE -DCSRG_BASED      -DUSEM4  -DXPM -DX11R6 -D_HAVE_XINERAMA_   -DI18N  -o session.o -c session.c
+# Enabling auto vectorisation
+session.c: In function 'GetClientID':
+session.c:160: warning: unused variable 'nbytes'
+session.c: In function 'SaveYourselfPhase2CB':
+session.c:944: warning: unused variable 'yes'
+session.c: In function 'GetClientID':
+session.c:160: warning: unused variable 'nbytes'
+session.c: In function 'SaveYourselfPhase2CB':
+session.c:944: warning: unused variable 'yes'
+rm -f ctwm
+gccopt -unibin64 -o ctwm  -gsimOpt     -L/usr/X11R6/lib   gram.o lex.o deftwmrc.o add_window.o gc.o list.o ctwm.o 		parse.o menus.o events.o resize.o util.o version.o iconmgr.o 		cursor.o icons.o workmgr.o session.o     -lXpm -lXmu -lXt -lSM -lICE -lXext -lX11 -lXt -lSM -lICE -lXext -lX11  -lXinerama      
+# Enabling auto vectorisation
+gccopt -unibin64  -gsimOpt        -I/usr/X11R6/include    -D__powerpc__ -D__DARWIN__                                 -DNO_ALLOCA -DX_LOCALE -DCSRG_BASED      -DUSEM4  -DXPM -DX11R6 -D_HAVE_XINERAMA_   -DI18N  -o libctwm.o -c libctwm.c
+# Enabling auto vectorisation
+libctwm.c: In function 'CtwmListWorkspaces':
+libctwm.c:81: warning: incompatible implicit declaration of built-in function 'strlen'
+libctwm.c:85: warning: incompatible implicit declaration of built-in function 'malloc'
+libctwm.c:92: warning: incompatible implicit declaration of built-in function 'strlen'
+libctwm.c: In function 'CtwmChangeWorkspace':
+libctwm.c:128: warning: incompatible implicit declaration of built-in function 'strlen'
+libctwm.c: In function 'CtwmCurrentOccupation':
+libctwm.c:157: warning: incompatible implicit declaration of built-in function 'strlen'
+libctwm.c:161: warning: incompatible implicit declaration of built-in function 'malloc'
+libctwm.c:168: warning: incompatible implicit declaration of built-in function 'strlen'
+libctwm.c: In function 'CtwmSetOccupation':
+libctwm.c:190: warning: incompatible implicit declaration of built-in function 'strlen'
+libctwm.c:192: warning: incompatible implicit declaration of built-in function 'malloc'
+libctwm.c:196: warning: incompatible implicit declaration of built-in function 'strcpy'
+libctwm.c:197: warning: incompatible implicit declaration of built-in function 'strlen'
+libctwm.c: In function 'CtwmAddToCurrentWorkspace':
+libctwm.c:237: warning: incompatible implicit declaration of built-in function 'strcpy'
+libctwm.c:239: warning: incompatible implicit declaration of built-in function 'strlen'
+libctwm.c: In function 'CtwmListWorkspaces':
+libctwm.c:81: warning: incompatible implicit declaration of built-in function 'strlen'
+libctwm.c:85: warning: incompatible implicit declaration of built-in function 'malloc'
+libctwm.c:92: warning: incompatible implicit declaration of built-in function 'strlen'
+libctwm.c: In function 'CtwmChangeWorkspace':
+libctwm.c:128: warning: incompatible implicit declaration of built-in function 'strlen'
+libctwm.c: In function 'CtwmCurrentOccupation':
+libctwm.c:157: warning: incompatible implicit declaration of built-in function 'strlen'
+libctwm.c:161: warning: incompatible implicit declaration of built-in function 'malloc'
+libctwm.c:168: warning: incompatible implicit declaration of built-in function 'strlen'
+libctwm.c: In function 'CtwmSetOccupation':
+libctwm.c:190: warning: incompatible implicit declaration of built-in function 'strlen'
+libctwm.c:192: warning: incompatible implicit declaration of built-in function 'malloc'
+libctwm.c:196: warning: incompatible implicit declaration of built-in function 'strcpy'
+libctwm.c:197: warning: incompatible implicit declaration of built-in function 'strlen'
+libctwm.c: In function 'CtwmAddToCurrentWorkspace':
+libctwm.c:237: warning: incompatible implicit declaration of built-in function 'strcpy'
+libctwm.c:239: warning: incompatible implicit declaration of built-in function 'strlen'
+rm -f libctwm.a
+ar clq libctwm.a  libctwm.o
+ranlib libctwm.a
+rm -f ctwm._man
+cd `dirname ctwm` && \
+		ln -s `basename ctwm.man` `basename ctwm._man`
+rm -f ctwm.1.html ctwm.1-html
+rman -f HTML < ctwm._man \
+	  > ctwm.1-html && mv -f ctwm.1-html ctwm.1.html
+macro "ne" not recognized -- ignoring
+macro "in" not recognized -- ignoring
+make: Leaving directory `/Volumes/Debian/Users/bertin/work/src/ctwm-3.5'
+0m0.002s 0m0.002s
+0m17.012s 0m2.127s
+# Mon Oct 11 11:05:25 CEST 2010

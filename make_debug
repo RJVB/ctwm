@@ -1,0 +1,27 @@
+#!/bin/sh
+
+
+if [ $# != 0 ] ;then
+	target="$1"
+	shift
+	while [ $# != 0 ] ;do
+		case $1 in
+			-*g|-*DEBUG)
+				set -x
+				cmp ${target} ${target}.db.script
+				if [ $? = 1 ] ;then
+					mv ${target} ${target}.bin && cp -p ${target}.db.script ${target}
+					exit $!
+				else
+					exit $?
+				fi
+				;;
+		esac
+		shift
+	done
+
+# make a (compressed) copy in ${target}.bin
+# the original is stripped
+	cp -p ${target} ${target}.bin
+	( strip ${target} ; gzip -9vf ${target}.bin )&
+fi
